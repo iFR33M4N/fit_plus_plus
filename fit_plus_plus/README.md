@@ -55,3 +55,5 @@ Start Metro Bundler. After that, you can press "i" or "a" to run the app on iOS 
 [26]: https://reactnative.dev/docs/environment-setup
 [27]: https://beta.reactjs.org/learn/react-developer-tools
 [29]: https://tamagui.dev
+
+## TODO: figure out if dependecies needed tailwind? next js app router? drizzle?

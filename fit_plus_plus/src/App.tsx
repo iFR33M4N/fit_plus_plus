@@ -18,12 +18,16 @@ import {
   DrawerNavigationOptions,
   DrawerHeaderProps,
 } from '@react-navigation/drawer';
+import {useEffect} from 'react';
+
+// Local
 import {Home} from './features/Home';
 import {Logo} from './components/Logo';
 import config from '../tamagui';
 import {UserDetailScreen} from './features/DetailScreen';
 import {useFonts} from "expo-font";
 import {tamaguiFonts} from "../tamagui/tamaguiFonts.native";
+import {HealthKitService} from './features/HealthMetrics';
 
 const Drawer = createDrawerNavigator();
 
@@ -100,6 +104,15 @@ const InnerApp = () => {
 };
 
 const App = () => {
+  useEffect(() => {
+    HealthKitService.initHealthKit()
+      .then(() => {
+        console.log('HealthKit initialized successfully');
+      })
+      .catch((error: any) => {
+        console.error('Failed to initialize HealthKit:', error);
+      });
+  }, []);
   const theme = useColorScheme() || 'light';
 
   const [loaded] = useFonts(tamaguiFonts)

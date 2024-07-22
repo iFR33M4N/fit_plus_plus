@@ -21,7 +21,7 @@ export function Home() {
     <YStack f={1} jc="center" ai="center" p="$4" space>
       <YStack space="$4" maw={600}>
         <H1 ta="center" fontFamily={'$silkscreen'}>
-          Welcome to Tamagui.
+          Welcome to Fit++.
         </H1>
         <Paragraph ta="center">
           Here&apos;s a basic starter to show navigating from one screen to

@@ -1,5 +1,16 @@
 # create-t3-turbo
 
+To get started:
+
+- Change to the directory: cd my_fit_plus_plus
+- Enable Remote Caching (recommended): pnpm dlx turbo login
+  - Learn more: https://turbo.build/repo/remote-cache
+
+- Run commands with Turborepo:
+  - pnpm run build: Build all apps and packages
+  - pnpm run dev: Develop all apps and packages
+  - pnpm run lint: Lint all apps and packages
+
 > [!NOTE]
 >
 > NextAuth setup now works for Expo app!

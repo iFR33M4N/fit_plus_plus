@@ -1,5 +1,21 @@
 # create-t3-turbo
 
+To get started:
+
+- Enable Remote Caching (recommended): pnpm dlx turbo login
+  - Learn more: https://turbo.build/repo/remote-cache
+
+- Run commands with Turborepo:
+  - pnpm run build: Build all apps and packages
+  - pnpm run dev: Develop all apps and packages
+  - pnpm run lint: Lint all apps and packages
+- Run a command twice to hit cache
+npm notice
+npm notice New patch version of npm available! 10.8.1 -> 10.8.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v10.8.2
+npm notice To update run: npm install -g npm@10.8.2
+npm notice
+
 > [!NOTE]
 >
 > NextAuth setup now works for Expo app!
